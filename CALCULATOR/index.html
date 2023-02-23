@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    </head>
+    <body>
+        <script>
+            function calcNumbers(result){
+                form.displayResult.value=form.displayResult.value+result;
+            
+            }
+            </script>
+        <h1>CALCULATOR</h1>
+        
+        <div class="container">
+            <form name="form">
+                <div class="display">
+                    <input type="text" placeholder="0" name="displayResult" />
+                 </div>
+            <input type="reset" value="CE">
+            <div class="buttons">
+            <div class="row">
+                <input type="button" name="bt7" value="7" onClick="calcNumbers(bt7.value)">
+                <input type="button" name="bt8" value="8" onClick="calcNumbers(bt8.value)">
+                <input type="button" name="bt9" value="9" onClick="calcNumbers(bt9.value)">
+                <input type="button" name="plus" value="+"onClick="calcNumbers(plus.value)">
+            </div>
+            <div class="row">
+            <input type="button" name="bt4" value="4" onClick="calcNumbers(bt4.value)">
+            <input type="button" name="bt5" value="5" onClick="calcNumbers(bt5.value)">
+            <input type="button" name="bt6" value="6" onClick="calcNumbers(bt6.value)">
+            <input type="button" name="minus" value="-"onClick="calcNumbers(minus.value)">
+            </div>
+            <div>
+                 <input type="button" name="bt1" value="1" onClick="calcNumbers(bt1.value)">
+                 <input type="button" name="bt2" value="2" onClick="calcNumbers(bt2.value)">
+                 <input type="button" name="bt3" value="3" onClick="calcNumbers(bt3.value)">
+                <input type="button" name="mult" value="*" onClick="calcNumbers(mult.value)">
+            </div>
+            <div class="row">
+                <input type="button" name="bt0" value="0" onClick="calcNumbers(bt0.value)">
+                <input type="button" name="btdot" value="."onClick="calcNumbers(btdot.value)">
+                <input type="button" name="btdiv" value="/" onClick="calcNumbers(btdiv.value)">
+                <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+            </div>
+        
+            </form>
+        </div>
+    
+
+
+    </body>
+</html>
